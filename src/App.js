@@ -1,61 +1,31 @@
-import React from "react";
 import "./App.css";
+import PageTitleDiv from './components/PageTitle';
+import React, { useEffect, useState } from "react";
+import Data from './components/Data';
+const axios = require('axios');
+
 
 function App() {
-
-// USEeffect HERE
-
-  return (
     
+    return (
     <div className="Container" >
 
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-
+       🚀
+        </div>
       
-    <div className="TitleDiv">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    <div className="PageTitleDiv">
+        <PageTitleDiv />
+      </div>
 
-    <div className="PhotoDiv">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-
-    <div className="CaptionDiv">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-
-    <div className="DateDiv">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-
-    <div className="CentroidDiv">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+    <div className="DataDiv">
+      <Data/>
     </div>
 
     </div>
-
-
-  );
+    )
 }
+
+  
 
 export default App;
