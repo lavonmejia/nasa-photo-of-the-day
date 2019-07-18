@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Image } from 'semantic-ui-react';
+
 const axios = require('axios');
 
 export default function Data() {
@@ -20,8 +22,11 @@ export default function Data() {
     return (
       <div>
         <h2>{datum.title}</h2>
+        <div className="ui divider"></div>
         <p>{datum.date}</p>
-        < img src={datum.image}/>
+        <div ClassName='ui medium rounded image'>
+        <img width='240px' src={datum.image}/>
+        </div>
         <p>{datum.explanation}</p>
       </div>
     );
